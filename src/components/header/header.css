@@ -10,7 +10,7 @@ header {
   padding: 10px 20px;
   gap: 20px;
   border-bottom: var(--border);
-  background-color: var(--white);
+  background-color: var(--bg);
   z-index: 9999;
 }
 
