@@ -6,7 +6,7 @@ export function Comp_Header() {
   return (
     <>
       <header>
-        <Link href="/">
+        <Link className="logo" href="/">
           <figure>
             <img src="/logo-black.webp" alt="Logo" width={60} height={60} />
           </figure>
