@@ -8,7 +8,7 @@ header {
   max-width: 1700px;
   margin: 0 auto;
   padding: 10px 20px;
-  gap: 30px;
+  gap: 20px;
   border-bottom: var(--border);
   background-color: var(--white);
   z-index: 9999;
@@ -21,20 +21,37 @@ header nav {
 header nav ul {
   flex-direction: row;
   width: 100%;
-  max-width: 400px;
+  max-width: 550px;
   margin: auto;
   justify-content: space-between;
-  gap: 20px;
 }
 
 header nav ul li a {
-  &:hover {
-    color: var(--brown);
+  padding: 10px 20px;
+  border-radius: 100px;
+
+  &:hover,
+  &:focus {
+    color: var(--white);
+    background-color: var(--brown);
   }
 }
 
 header .btn {
   gap: 20px;
+}
+
+header .btn label {
+  transition: 0.3s ease;
+  border-radius: 100px;
+
+  &:hover {
+    background-color: var(--gray-light);
+  }
+}
+
+header .btn .btn-check .icon {
+  cursor: pointer;
 }
 
 header .btn:has(button) button {
@@ -62,9 +79,25 @@ header .btn .input-search {
   }
 }
 
-header .btn .btn-check:has(input:checked) .input-search {
-  z-index: 1;
-  opacity: 1;
+header .btn .btn-check:has(:not(input:checked)) {
+  & .close {
+    display: none;
+  }
+}
+
+header .btn .btn-check:has(input:checked) {
+  & .input-search {
+    z-index: 1;
+    opacity: 1;
+  }
+
+  & .search {
+    display: none;
+  }
+
+  & .close {
+    display: flex;
+  }
 }
 
 header .btn .number {
@@ -110,10 +143,67 @@ header .btn .menu:has(input:checked) {
   & .icon-hidden {
     display: flex;
   }
+
+  & .menu-mobile {
+    right: 20px;
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
-@media (width < 600px) {
-  header nav,
+header .menu-mobile {
+  position: absolute;
+  background-color: var(--white);
+  top: 82px;
+  right: -280px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
+  box-shadow: -3px 3px 6px #00000031;
+  border-radius: 20px;
+  transition: 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+header .menu-mobile .search {
+  padding: 30px 30px 0 30px;
+}
+
+header .menu-mobile .search input {
+  border: var(--border);
+  height: 40px;
+  padding: 0 20px;
+  width: calc(100% - 30px);
+  border-radius: 100px;
+  display: block;
+
+  &:focus {
+    border: 1px solid var(--black);
+  }
+}
+
+header .menu-mobile ul {
+  flex-direction: column;
+  gap: 0;
+}
+
+header .menu-mobile ul a {
+  justify-content: left;
+  height: 43px;
+  padding: 0 30px;
+  border-radius: 0;
+
+  &:hover {
+    background-color: var(--brown);
+    color: var(--white);
+  }
+}
+
+@media (width < 710px) {
+  header .nav-desk,
   header .btn .btn-check,
   header .btn .btn-shop {
     display: none;

@@ -51,6 +51,7 @@ html {
   --black: #000000;
   --gree: #62b153;
   --brown: #4c2102;
+  --brown-hover: #5a3419;
   --gray-light: #ebebeb;
   --gray-dark: #a7a7a7;
   --text: #1a1a1a;
@@ -63,11 +64,10 @@ body {
   font-family: "Instrument", sans-serif;
   color: var(--black);
   font-size: 1rem;
-  overflow: hidden;
 }
 
 main {
-  margin-top: 100px;
+  margin: 100px 0 50px 0;
   width: 100%;
 }
 
@@ -139,6 +139,7 @@ img {
   align-items: center;
   gap: 10px;
   width: fit-content;
+  transition: 0.3s ease;
 }
 
 .icon svg {

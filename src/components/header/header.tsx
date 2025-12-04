@@ -12,7 +12,7 @@ export function Comp_Header() {
           </figure>
         </Link>
 
-        <nav>
+        <nav className="nav-desk">
           <ul>
             <li>
               <Link href="#">Home</Link>
@@ -34,7 +34,8 @@ export function Comp_Header() {
             <input type="checkbox" id="ShowSearch" />
             <input className="input-search" type="text" id="ShowSearch" placeholder="Pesquisar..." />
             <label htmlFor="ShowSearch" className="icon">
-              <BsSearch />
+              <BsSearch className="search" />
+              <BsX className="close" />
             </label>
           </button>
 
@@ -45,8 +46,8 @@ export function Comp_Header() {
             </div>
           </button>
 
-          <button className="menu">
-            <input type="checkbox" id="ShowHiddenMenu" />
+          <div className="menu">
+            <input type="checkbox" id="ShowHiddenMenu" className="input-menu" />
             <label htmlFor="ShowHiddenMenu" className="ShowHiddenMenu">
               <div className="icon icon-show">
                 <BsPause />
@@ -56,7 +57,30 @@ export function Comp_Header() {
                 <BsX />
               </div>
             </label>
-          </button>
+
+            <div className="menu-mobile">
+              <div className="search">
+                <input type="text" placeholder="Pesquisar..." />
+              </div>
+
+              <nav>
+                <ul>
+                  <li>
+                    <Link href="#">Home</Link>
+                  </li>
+                  <li>
+                    <Link href="#">Produtos</Link>
+                  </li>
+                  <li>
+                    <Link href="#">Sobre</Link>
+                  </li>
+                  <li>
+                    <Link href="#">Contactos</Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </div>
       </header>
     </>

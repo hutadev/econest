@@ -37,6 +37,27 @@
   border: 1px solid var(--brown);
 }
 
+.herosection .box .btn-link a:nth-child(1) {
+  &:hover,
+  &:focus {
+    background-color: var(--brown-hover);
+    color: var(--white);
+
+    & .icon {
+      transform: translateX(5px);
+    }
+  }
+}
+
+.herosection .box .btn-link a:nth-child(2) {
+  &:hover,
+  &:focus {
+    background-color: var(--gray-light);
+    color: var(--black);
+    border: 1px solid var(--gray-dark);
+  }
+}
+
 .herosection .box .btn-link .StartNow {
   background-color: var(--brown);
   color: var(--white);
@@ -74,6 +95,12 @@
 .herosection .box .info .btn-info a {
   background-color: var(--white);
   border-radius: 100px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--gray-light);
+    color: var(--black);
+  }
 }
 
 .herosection .box .info .btn-info a:nth-child(1) {
