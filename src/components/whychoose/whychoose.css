@@ -1,0 +1,91 @@
+.whychoose {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.whychoose .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.whychoose .container .intro {
+  width: 100%;
+}
+
+.whychoose .container .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.whychoose .container .c-text {
+  width: 70%;
+  line-height: 1.3;
+}
+
+.whychoose .container:nth-child(2) {
+  gap: 20px;
+}
+
+.whychoose .container .container-child {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.whychoose .container .box {
+  text-align: center;
+  max-width: 200px;
+}
+
+.whychoose .container .box .number {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.whychoose .container .box p {
+  line-height: 1.3;
+}
+
+@media (width < 700px) {
+  .whychoose .container {
+    gap: 20px;
+  }
+
+  .whychoose .container:nth-child(2) {
+    gap: 20px;
+  }
+
+  .whychoose .container .container-child {
+    flex-direction: column;
+  }
+
+  .whychoose .container .container-child .box {
+    max-width: 100%;
+  }
+}
+
+@media (width < 500px) {
+  .whychoose .container:nth-child(1) {
+    gap: 0px;
+    flex-direction: column;
+  }
+
+  .whychoose .container .c-text {
+    width: 100%;
+    line-height: 1.6;
+  }
+}
+
+@media (width < 370px) {
+  .whychoose .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

@@ -67,8 +67,11 @@ body {
 }
 
 main {
-  margin: 100px 0 50px 0;
+  margin: 0 0 50px 0;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 
 a,
@@ -144,4 +147,11 @@ img {
 
 .icon svg {
   font-size: 1.3rem;
+}
+
+@media (width < 500px) {
+  main {
+    margin: 0 0 50px 0;
+    gap: 40px;
+  }
 }
