@@ -1,0 +1,125 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  gap: 30px;
+  border-bottom: var(--border);
+  background-color: var(--white);
+  z-index: 9999;
+}
+
+header nav {
+  width: 100%;
+}
+
+header nav ul {
+  flex-direction: row;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+header nav ul li a {
+  &:hover {
+    color: var(--brown);
+  }
+}
+
+header .btn {
+  gap: 20px;
+}
+
+header .btn:has(button) button {
+  &:hover {
+    color: var(--brown);
+  }
+}
+
+header .btn .input-search {
+  border: var(--border);
+  height: 35px;
+  width: 100%;
+  max-width: 150px;
+  padding: 0 15px;
+  border-radius: 100px;
+  color: var(--black);
+  position: absolute;
+  transform: translate(-110px, 0);
+  background-color: var(--white);
+  z-index: -1;
+  opacity: 0;
+
+  &:focus {
+    border: 1px solid var(--black);
+  }
+}
+
+header .btn .btn-check:has(input:checked) .input-search {
+  z-index: 1;
+  opacity: 1;
+}
+
+header .btn .number {
+  display: grid;
+  place-items: center;
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+  border: var(--border);
+  color: var(--black);
+}
+
+header .btn .menu {
+  display: none;
+}
+
+header .btn .menu input {
+  display: none;
+}
+
+header .btn .menu .ShowHiddenMenu {
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+
+  & svg {
+    font-size: 2rem;
+    transform: rotate(90deg);
+  }
+}
+
+header .btn .menu .icon-hidden {
+  display: none;
+}
+
+header .btn .menu:has(input:checked) {
+  .icon-show {
+    display: none;
+  }
+
+  & .icon-hidden {
+    display: flex;
+  }
+}
+
+@media (width < 600px) {
+  header nav,
+  header .btn .btn-check,
+  header .btn .btn-shop {
+    display: none;
+  }
+
+  header .btn .menu {
+    display: grid;
+  }
+}
