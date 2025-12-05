@@ -1,0 +1,49 @@
+.cardperfectpiece {
+  position: relative;
+  margin: auto;
+  width: 100%;
+
+  &:hover img {
+    transform: scale(110%);
+  }
+}
+
+.cardperfectpiece figure {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.cardperfectpiece img {
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  transform: scale(100%);
+}
+
+.cardperfectpiece .detalhe {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid var(--white);
+  width: calc(100% - 40px);
+}
+
+.cardperfectpiece .detalhe p {
+  color: var(--white);
+}
+
+.cardperfectpiece .detalhe a {
+  background-color: var(--white);
+  height: 35px;
+  width: 35px;
+  border-radius: 100px;
+
+  &:hover {
+    background-color: var(--gray-light);
+  }
+}

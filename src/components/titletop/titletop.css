@@ -1,0 +1,31 @@
+.titletop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  transition: 0.3s ease;
+}
+
+.titletop .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.titletop a {
+  width: fit-content;
+  padding: 13px 23px;
+  border-radius: 12px;
+  border: 1px solid var(--brown);
+  color: var(--brown);
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    color: var(--black);
+    background-color: var(--gray-light);
+    border: 1px solid var(--gray-dark);
+  }
+}
