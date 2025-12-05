@@ -50,6 +50,8 @@
 }
 
 .herosection .box .btn-link a:nth-child(2) {
+  border: 1px solid var(--black);
+
   &:hover,
   &:focus {
     background-color: var(--gray-light);
