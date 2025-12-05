@@ -29,7 +29,7 @@ export function Herosection() {
 
         <div className="box">
           <figure>
-            <Image src={hero} alt="Capa" width={400} height={270} />
+            <Image src={hero} alt="Capa" width={400} height={270} fetchPriority="high" />
           </figure>
           <div className="info">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, aliquam?</p>
