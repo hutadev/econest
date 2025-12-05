@@ -20,15 +20,15 @@ export function BestSellers() {
             id="check_1"
             img={novabed}
             title="Nova cama"
-            preco="2.500"
+            preco="25.000"
             star={<IoStarOutline className="desible" />}
-            view={102}
+            view={78}
           />
           <CardBestSellers
             id="check_2"
             img={outdoordining}
             title="Kit de mesa de Jantar"
-            preco="2.500"
+            preco="10.000"
             star={<IoStar />}
             view={102}
           />
@@ -38,31 +38,31 @@ export function BestSellers() {
             title="Espelho de quarto"
             preco="2.500"
             star={<IoStar />}
-            view={102}
+            view={176}
           />
           <CardBestSellers
             id="check_4"
             img={outdoordiningset}
             title="Jogo de mesa de lanche"
-            preco="2.500"
+            preco="8.999"
             star={<IoStarOutline className="desible" />}
-            view={102}
+            view={255}
           />
           <CardBestSellers
             id="check_5"
             img={vintagesofaset}
             title="Sofa de vintage"
-            preco="2.500"
+            preco="7.800"
             star={<IoStarOutline className="desible" />}
-            view={102}
+            view={296}
           />
           <CardBestSellers
             id="check_6"
             img={wooldblanket}
             title="Armario de madeira"
-            preco="2.500"
+            preco="4.300"
             star={<IoStar />}
-            view={102}
+            view={342}
           />
         </div>
       </section>

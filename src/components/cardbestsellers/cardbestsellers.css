@@ -69,10 +69,6 @@
   text-transform: uppercase;
 }
 
-.CardBestSellers .detalhes .content .preco {
-  font-size: 1.3rem;
-}
-
 .CardBestSellers .detalhes .star-view {
   display: flex;
   align-items: center;
