@@ -140,6 +140,10 @@ img {
   transition: 0.3s ease;
 }
 
+.title {
+  transition: 0.3s ease;
+}
+
 .icon,
 .btn {
   display: flex;
@@ -174,7 +178,7 @@ img {
   }
 }
 
-@media (width < 500px) {
+@media (width < 650px) {
   main {
     margin: 0 0 50px 0;
     gap: 40px;
