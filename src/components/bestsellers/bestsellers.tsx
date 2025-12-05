@@ -15,7 +15,7 @@ export function BestSellers() {
       <section className="bestsellers">
         <Titletop title="Best Sellers" text_url="Todos Produtos" link_url="#" />
 
-        <div className="columns-3">
+        <div className="columns-3 c-columns-bs">
           <CardBestSellers
             id="check_1"
             img={novabed}
