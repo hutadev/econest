@@ -2,6 +2,7 @@ import { Comp_Header } from "@/components/header/header"
 import "./globals.css"
 import LenisProvider from "@/components/lenisprovider/LenisProvider"
 import type { Metadata } from "next"
+import { Footer_Component } from "@/components/footer/footer"
 
 export const metadata: Metadata = {
   title: "EcoNest | Design Sustentável para Interiores",
@@ -62,6 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <LenisProvider />
         <Comp_Header />
         <main>{children}</main>
+        <Footer_Component />
       </body>
     </html>
   )
