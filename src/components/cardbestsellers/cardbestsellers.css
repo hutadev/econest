@@ -1,0 +1,104 @@
+.CardBestSellers {
+  position: relative;
+}
+
+.CardBestSellers .icon-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 1;
+}
+
+.CardBestSellers .icon-btn input {
+  display: none;
+}
+
+.CardBestSellers .icon-btn label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--gray-light);
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+}
+
+.CardBestSellers .icon-btn label svg {
+  font-size: 1.5rem;
+  color: var(--white);
+  transform: translateY(1px);
+}
+
+.CardBestSellers .icon-btn label .icon-fat svg {
+  color: var(--red);
+}
+
+.CardBestSellers .icon-btn label .icon-fat {
+  display: none;
+}
+
+.CardBestSellers:has(input:checked) {
+  .icon-fat {
+    display: flex;
+  }
+  .icon-fit {
+    display: none;
+  }
+}
+
+.CardBestSellers figure img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.CardBestSellers .detalhes {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.CardBestSellers .detalhes .content {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.CardBestSellers .detalhes .content .title {
+  text-transform: uppercase;
+}
+
+.CardBestSellers .detalhes .content .preco {
+  font-size: 1.3rem;
+}
+
+.CardBestSellers .detalhes .star-view {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.CardBestSellers .detalhes .star-view .star {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.CardBestSellers .detalhes .star-view .star .icon {
+  color: var(--yellow);
+}
+
+.CardBestSellers .detalhes .star-view .star .desible {
+  color: var(--gray-dark);
+}
+
+.CardBestSellers .detalhes .star-view .view {
+  font-size: 0.8rem;
+}
+
+@media (width < 320px) {
+  .CardBestSellers .detalhes .content .preco {
+    font-size: 1rem;
+  }
+}

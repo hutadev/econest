@@ -1,3 +1,4 @@
+import { BestSellers } from "@/components/bestsellers/bestsellers"
 import { Herosection } from "@/components/herosection/herosection"
 import { PerfectPiece } from "@/components/perfectpiece/perfectpiece"
 import { Whychoose } from "@/components/whychoose/whychoose"
@@ -8,6 +9,7 @@ export default function Home() {
       <Herosection />
       <Whychoose />
       <PerfectPiece />
+      <BestSellers />
     </main>
   )
 }

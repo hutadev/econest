@@ -34,7 +34,7 @@ html {
   scroll-padding-top: 100px;
   transition: 0.3s ease;
   font-family: "Instrument", sans-serif;
-  user-select: none;
+  /* user-select: none; */
 }
 
 ::selection {
@@ -48,11 +48,13 @@ html {
 }
 
 :root {
+  --red: #ff0044;
   --white: #ffffff;
   --black: #000000;
   --gree: #62b153;
   --brown: #4c2102;
   --brown-hover: #5a3419;
+  --yellow: #ffc544;
   --gray-light: #ebebeb;
   --gray-dark: #a7a7a7;
   --text: #1a1a1a;
