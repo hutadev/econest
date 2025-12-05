@@ -1,4 +1,9 @@
+import Image from "next/image"
 import "./whychoose.css"
+import couch from "../../assets/couch.webp"
+import Link from "next/link"
+import { BsArrowRight } from "react-icons/bs"
+
 export function Whychoose() {
   return (
     <>
@@ -34,6 +39,25 @@ export function Whychoose() {
               <p className="number">900+</p>
               <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
+          </div>
+        </div>
+
+        <div className="comuda">
+          <figure>
+            <Image src={couch} alt="Comfortable couch" width={300} height={450} loading="lazy" />
+          </figure>
+
+          <div className="detalh">
+            <p className="title">Trabalhamos para construir a greener tomorror</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam enim neque blanditiis, omnis accusamus.
+            </p>
+            <Link href="#">
+              Experimentar
+              <div className="icon">
+                <BsArrowRight />
+              </div>
+            </Link>
           </div>
         </div>
       </section>

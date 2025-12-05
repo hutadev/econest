@@ -36,6 +36,7 @@
 .whychoose .container .container-child {
   display: flex;
   width: 100%;
+  justify-content: space-evenly;
   gap: 20px;
 }
 
@@ -53,6 +54,64 @@
   line-height: 1.3;
 }
 
+.whychoose .comuda {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.whychoose .comuda figure {
+  width: 100%;
+  max-width: 500px;
+}
+
+.whychoose .comuda img {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.whychoose .comuda .detalh {
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--gray-light);
+  height: auto;
+  border: 1px solid var(--gray-dark);
+  border-radius: 20px;
+  padding: 30px;
+  position: relative;
+}
+
+.whychoose .comuda .detalh .title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+
+.whychoose .comuda .detalh a {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  padding: 13px 23px;
+  border-radius: 12px;
+  background-color: var(--brown);
+  color: var(--white);
+
+  &:hover,
+  &:focus {
+    background-color: var(--brown-hover);
+    color: var(--white);
+
+    & .icon {
+      transform: translateX(5px);
+    }
+  }
+}
+
 @media (width < 700px) {
   .whychoose .container {
     gap: 20px;
@@ -68,6 +127,39 @@
 
   .whychoose .container .container-child .box {
     max-width: 100%;
+  }
+}
+
+@media (width < 670px) {
+  .whychoose .comuda .detalh {
+    padding: 20px;
+  }
+
+  .whychoose .comuda .detalh .title {
+    font-size: 1.4rem;
+  }
+
+  @media (width < 670px) {
+    .whychoose .comuda {
+      flex-direction: column;
+    }
+
+    .whychoose .comuda figure,
+    .whychoose .comuda .detalh {
+      margin: auto;
+    }
+
+    .whychoose .comuda .detalh a {
+      position: static;
+      margin-top: 20px;
+      width: fit-content;
+    }
+  }
+
+  @media (width < 500px) {
+    .whychoose .comuda {
+      margin-top: 20px;
+    }
   }
 }
 
