@@ -19,7 +19,9 @@ export function CardPerfectPiece({ img, text, url, icon }: CardPerfectPieceProps
 
       <div className="detalhe">
         <p>{text}</p>
-        <Link href={url}>{icon}</Link>
+        <Link href={url} aria-label="Ver produto">
+          {icon}
+        </Link>
       </div>
     </div>
   )

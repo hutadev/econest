@@ -6,7 +6,7 @@ export function Comp_Header() {
   return (
     <>
       <header>
-        <Link className="logo" href="/">
+        <Link aria-label="Acessar" className="logo" href="/">
           <figure>
             <img src="/logo-black.webp" alt="Logo" width={60} height={60} />
           </figure>
@@ -15,16 +15,24 @@ export function Comp_Header() {
         <nav className="nav-desk">
           <ul>
             <li>
-              <Link href="#">Home</Link>
+              <Link aria-label="Acessar" href="#">
+                Home
+              </Link>
             </li>
             <li>
-              <Link href="#">Produtos</Link>
+              <Link aria-label="Acessar" href="#">
+                Produtos
+              </Link>
             </li>
             <li>
-              <Link href="#">Sobre</Link>
+              <Link aria-label="Acessar" href="#">
+                Sobre
+              </Link>
             </li>
             <li>
-              <Link href="#">Contactos</Link>
+              <Link aria-label="Acessar" href="#">
+                Contactos
+              </Link>
             </li>
           </ul>
         </nav>
@@ -66,16 +74,24 @@ export function Comp_Header() {
               <nav>
                 <ul>
                   <li>
-                    <Link href="#">Home</Link>
+                    <Link aria-label="Acessar" href="#">
+                      Home
+                    </Link>
                   </li>
                   <li>
-                    <Link href="#">Produtos</Link>
+                    <Link aria-label="Acessar" href="#">
+                      Produtos
+                    </Link>
                   </li>
                   <li>
-                    <Link href="#">Sobre</Link>
+                    <Link aria-label="Acessar" href="#">
+                      Sobre
+                    </Link>
                   </li>
                   <li>
-                    <Link href="#">Contactos</Link>
+                    <Link aria-label="Acessar" href="#">
+                      Contactos
+                    </Link>
                   </li>
                 </ul>
               </nav>

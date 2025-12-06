@@ -1,23 +1,7 @@
 @font-face {
   font-family: "Instrument";
   src: url("../fontes/Instrument.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "KleeRegular";
-  src: url("../fontes/KleeRegular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "KleeBold";
-  src: url("../fontes/KleeBold.ttf") format("truetype");
-  font-weight: bold;
+  font-weight: 430;
   font-style: normal;
   font-display: swap;
 }

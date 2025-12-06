@@ -15,13 +15,13 @@ export function Herosection() {
             possimus unde!
           </p>
           <div className="btn-link">
-            <Link href="#" className="StartNow">
+            <Link href="#" className="StartNow" aria-label="Começar agora">
               Começar agora
               <div className="icon">
                 <BsArrowRight />
               </div>
             </Link>
-            <Link href="#" className="ReadMore">
+            <Link href="#" className="ReadMore" aria-label="Ler mais">
               Ler mais
             </Link>
           </div>
@@ -29,15 +29,15 @@ export function Herosection() {
 
         <div className="box">
           <figure>
-            <Image src={hero} alt="Capa" width={400} height={270} fetchPriority="high" />
+            <Image src={hero} alt="Capa" width={400} height={270} fetchPriority="high" priority={true} quality={85} />
           </figure>
           <div className="info">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, aliquam?</p>
             <div className="btn-info">
-              <Link className="show" href="#">
+              <Link className="show" href="#" aria-label="Ver produto">
                 Ver produto
               </Link>
-              <Link className="icon-section" href="#">
+              <Link className="icon-section" href="#" aria-label="Ver produto">
                 <div className="icon">
                   <BsArrowUpRight />
                 </div>

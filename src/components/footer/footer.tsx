@@ -24,16 +24,24 @@ export function Footer_Component() {
             <p className="title">Links Rápidos</p>
             <ul>
               <li>
-                <Link href="#">Sobre</Link>
+                <Link aria-label="Acessar" href="#">
+                  Sobre
+                </Link>
               </li>
               <li>
-                <Link href="#">Produtos</Link>
+                <Link aria-label="Acessar" href="#">
+                  Produtos
+                </Link>
               </li>
               <li>
-                <Link href="#">Contactos</Link>
+                <Link aria-label="Acessar" href="#">
+                  Contactos
+                </Link>
               </li>
               <li>
-                <Link href="#">FAQ</Link>
+                <Link aria-label="Acessar" href="#">
+                  FAQ
+                </Link>
               </li>
             </ul>
           </nav>
@@ -42,7 +50,7 @@ export function Footer_Component() {
             <p className="title">Contacto</p>
             <ul>
               <li>
-                <Link href="#">
+                <Link aria-label="Acessar" href="#">
                   <div className="icon">
                     <BsEnvelope />
                   </div>
@@ -50,7 +58,7 @@ export function Footer_Component() {
                 </Link>
               </li>
               <li>
-                <Link href="#">
+                <Link aria-label="Acessar" href="#">
                   <div className="icon">
                     <BsTelephone />
                   </div>
@@ -58,7 +66,7 @@ export function Footer_Component() {
                 </Link>
               </li>
               <li>
-                <Link href="#">
+                <Link aria-label="Acessar" href="#">
                   <div className="icon">
                     <BsGeoAlt />
                   </div>
@@ -72,21 +80,21 @@ export function Footer_Component() {
             <p className="title">Nos siga</p>
             <ul className="social-media">
               <li>
-                <Link href="#">
+                <Link aria-label="Acessar" href="#">
                   <div className="icon">
                     <SlSocialFacebook />
                   </div>
                 </Link>
               </li>
               <li>
-                <Link href="#">
+                <Link aria-label="Acessar" href="#">
                   <div className="icon">
                     <SlSocialInstagram />
                   </div>
                 </Link>
               </li>
               <li>
-                <Link href="#">
+                <Link aria-label="Acessar" href="#">
                   <div className="icon">
                     <BsTwitterX />
                   </div>

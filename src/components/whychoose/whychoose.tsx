@@ -52,7 +52,7 @@ export function Whychoose() {
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam enim neque blanditiis, omnis accusamus.
             </p>
-            <Link href="#">
+            <Link href="#" aria-label="Experimentar">
               Experimentar
               <div className="icon">
                 <BsArrowRight />
